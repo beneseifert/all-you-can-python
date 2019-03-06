@@ -6,11 +6,6 @@ obst = ['Orange', 'Zitrone', 'Banane', 'Kirsche', 'Apfel', 'Feige', 'Birne', 'An
 
 vorkommen = {}
 
-for frucht in obst:
-    try:
-        vorkommen[frucht] += 1
-    except KeyError:
-        vorkommen[frucht] = 1
+# Befülle vorkommen
 
 print(vorkommen)
-print(Counter(obst))
