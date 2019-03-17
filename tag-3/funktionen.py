@@ -8,7 +8,7 @@ worte_die_ich_nicht_mag = []
 
 def lade_worte():
     worte = []
-    with io.open('./openthesaurus.txt', mode='r', encoding='utf-8') as datei:
+    with io.open('../tag-2/openthesaurus.txt', mode='r', encoding='utf-8') as datei:
         for zeile in datei:
             if not zeile.startswith('#'):
                 eintrag = zeile.split(';')[0]
