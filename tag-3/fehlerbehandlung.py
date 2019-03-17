@@ -6,6 +6,11 @@ obst = ['Orange', 'Zitrone', 'Banane', 'Kirsche', 'Apfel', 'Feige', 'Birne', 'An
 
 vorkommen = {}
 
-# Befülle vorkommen
+for frucht in obst:
+    try:
+        vorkommen[frucht] += 1
+    except KeyError:
+        vorkommen[frucht] = 1
 
 print(vorkommen)
+print(Counter(obst))
